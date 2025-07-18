@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">AIRX</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Flights</a></li>
+                <li><a href="#">Hotels</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="btn">Sign In</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Find Your Next Flight</h1>
+            <p>Book your dream flight at the best prices</p>
+            
+            <form class="search-form" action="display_results.php" method="GET">
+                <input type="text" name="departure" placeholder="From" required>
+                <input type="text" name="destination" placeholder="To" required>
+                <input type="date" name="date" required>
+                <button type="submit">Search Flights</button>
+            </form>
+            
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AirX. All rights reserved.</p>
+    </footer>
+    <script src="flight.js"></script>
+</body>
+</html>
